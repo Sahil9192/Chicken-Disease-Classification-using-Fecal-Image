@@ -35,7 +35,7 @@ Chicken-Disease-Classification-using-Fecal-Image/
 ## 🛠️ Installation
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/your-username/Chicken-Disease-Classification.git
+git clone https://github.com/Sahil9192/Chicken-Disease-Classification-using-Fecal-Image.git
 cd Chicken-Disease-Classification
 ```
 
