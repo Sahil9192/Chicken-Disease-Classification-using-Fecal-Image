@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/Sahil/OneDrive/AI_ADV/ChickenDisease/Chicken-Disease-Classification-using-Fecal-Image/mlruns/0/f1612e6f40814535883e1b383078e4f5/artifacts
+end_time: 1741626263018
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f1612e6f40814535883e1b383078e4f5
+run_name: amusing-smelt-904
+run_uuid: f1612e6f40814535883e1b383078e4f5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741626225656
+status: 3
+tags: []
+user_id: Sahil

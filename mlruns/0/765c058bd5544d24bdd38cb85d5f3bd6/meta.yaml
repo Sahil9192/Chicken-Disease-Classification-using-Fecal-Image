@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/Sahil/OneDrive/AI_ADV/ChickenDisease/Chicken-Disease-Classification-using-Fecal-Image/mlruns/0/765c058bd5544d24bdd38cb85d5f3bd6/artifacts
+end_time: 1741629043796
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 765c058bd5544d24bdd38cb85d5f3bd6
+run_name: luminous-shrimp-933
+run_uuid: 765c058bd5544d24bdd38cb85d5f3bd6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741629017305
+status: 3
+tags: []
+user_id: Sahil
