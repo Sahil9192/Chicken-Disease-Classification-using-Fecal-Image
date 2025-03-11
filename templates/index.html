@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken Disease Classification</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2C3E50;
+            --secondary-color: #E74C3C;
+            --accent-color: #27AE60;
+            --bg-light: #ECF0F1;
+            --bg-dark: #1A1A1A;
+            --text-light: #FFFFFF;
+            --text-dark: #2C3E50;
+        }
+
+        body {
+            background: var(--bg-light);
+            min-height: 100vh;
+            transition: background 0.5s ease;
+        }
+
+        .main-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: background 0.5s ease, color 0.5s ease;
+        }
+
+        .btn-custom {
+            background: var(--secondary-color);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
+        }
+
+        .dark-mode {
+            background: var(--bg-dark) !important;
+            color: var(--text-light) !important;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="image-container">
+            <img src="https://www.example.com/chicken-disease.jpg" alt="Chicken Disease Classification">
+        </div>
+        
+        <div class="d-flex justify-content-between align-items-center">
+            <h1 class="display-4" style="color: var(--primary-color);">Chicken Disease Classification</h1>
+            <button class="btn btn-outline-dark" id="darkModeToggle">
+                <i class="fas fa-moon"></i> Dark Mode
+            </button>
+        </div>
+
+        <p class="lead text-muted">Upload an image of fecal matter to classify chicken diseases using AI.</p>
+
+        <div class="row">
+            <div class="col-md-6">
+                <input type="file" id="fileInput" hidden accept="image/*">
+                <button class="btn btn-custom" id="uploadBtn">
+                    <i class="fas fa-upload"></i> Upload Image
+                </button>
+            </div>
+            <div class="col-md-6">
+                <h4 class="mb-3">Results</h4>
+                <div id="results" class="alert alert-info">Upload an image to get started</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('uploadBtn').addEventListener('click', () => {
+            document.getElementById('fileInput').click();
+        });
+
+        document.getElementById('darkModeToggle').addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>
